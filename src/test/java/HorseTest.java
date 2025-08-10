@@ -9,12 +9,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class HorseTest {
 
-    private static final String HORSE_NAME = "Spirit";
-    private static final double HORSE_SPEED = 10.0;
-    private static final double HORSE_DISTANCE = 20.0;
-    private static final double NEGATIVE_NUMBER = -5.0;
-    private static final Horse HORSE_TWO_PARAMS = new Horse(HORSE_NAME, HORSE_SPEED);
-    private static final Horse HORSE_THREE_PARAMS = new Horse(HORSE_NAME, HORSE_SPEED, HORSE_DISTANCE);
+    private final String HORSE_NAME = "Spirit";
+    private final double HORSE_SPEED = 10.0;
+    private final double HORSE_DISTANCE = 20.0;
+    private final double NEGATIVE_NUMBER = -5.0;
+    private final Horse HORSE_TWO_PARAMS = new Horse(HORSE_NAME, HORSE_SPEED);
+    private final Horse HORSE_THREE_PARAMS = new Horse(HORSE_NAME, HORSE_SPEED, HORSE_DISTANCE);
 
     private static final MockedStatic<Horse> MOCKED_STATIC = Mockito.mockStatic(Horse.class);
 

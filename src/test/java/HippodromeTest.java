@@ -6,15 +6,14 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.*;
 import java.util.stream.IntStream;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 
 @ExtendWith(MockitoExtension.class)
 public class HippodromeTest {
 
-    public static final int HORSES_LIMIT = 30;
-    public static final int MOCKED_HORSES_LIMIT = 50;
+    public final int HORSES_LIMIT = 30;
+    public final int MOCKED_HORSES_LIMIT = 50;
 
     @Test
     public void shouldThrowExceptionIfArgIsNull() {
